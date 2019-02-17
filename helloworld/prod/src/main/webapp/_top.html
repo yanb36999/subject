@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>top</title>
+<meta charset="utf-8" />
+<style type="text/css">
+/* css样式 */
+body {
+	background-color: #1172B5;
+	font-family: "微软雅黑";
+	/*margin:0px;
+				padding:0px;*/
+}
+
+h1 {
+	color: #FFFFFF;
+	letter-spacing: 5px;
+	text-shadow: 5px 5px 5px #000;
+	float: left;
+	margin-left: 50px;
+	margin-top: 35px;
+}
+#h {
+	float: right;
+	margin-right: 50px;
+}
+</style>
+<script src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+function fn(){
+	var h = document.getElementById("h");
+	h.innerText= new Date().toLocaleTimeString();
+}
+
+setInterval(function(){
+	var d = new Date();
+	h.innerText=d.toLocaleTimeString();
+},1000);
+</script>
+</head>
+<body margin="0" onload="fn()">
+	<h1>京淘商城后台管理系统</h1>
+	<h1 id="h"></h1>
+</body>
+</html>
